@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução</title>
+
+    <!-- Linkando o arquivo JS por meio do SRC-->
+    <script type="text/javascript" src="./main.js"></script>
+</head>
+<!-- assim que o body for carregado a função onload() é ativada -->
+<!-- chamando a função load() que criamos no arquivo JS -->
+<body onload="load()">
+    
+    <h1>Minha página</h1>
+
+    <!-- assim que o usuário clicar ele vai chamar a função clicou() que está la no arquivo JS -->
+    <!-- isso por conta da função onclick() -->
+    <button type="button" onclick="clicou()">Clique aqui</button>
+
+    <button type="button" onclick="mensagem()">Mensagem de agradecimento</button>
+
+    <button type="button" onclick="redirecionamento()">Redirecionamento para outra página</button>
+
+    <!-- onmouseover() é uma função que é ativada quando vc passa o mouse por cima do elemento -->
+    <!-- onmouseout() é uma função que é ativada quando vc tira o mouse de cima do elemento -->
+    <h3 id="mousemove" onmouseover="trocadetexto()" onmouseout="voltartexto()">Passa o mouse por cima</h3>
+    
+    <h3 id="agradecimento"></h3>
+
+    <!-- onchamge() pega a opção que o usuário escolheu -->
+    <select onchange="funcaoChange(this)">
+        <option value="1"> 1 </option>
+        <option value="2"> 2 </option>
+        <option value="3"> 3 </option>
+    </select>
+</body>
+</html>
